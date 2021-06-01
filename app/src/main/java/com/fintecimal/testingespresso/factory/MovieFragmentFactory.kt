@@ -1,10 +1,10 @@
-package com.codingwithmitch.espressouitestexamples.factory
+package com.fintecimal.testingespresso.factory
 
 
 import androidx.fragment.app.FragmentFactory
 import com.fintecimal.testingespresso.ui.movie.DirectorsFragment
-import com.codingwithmitch.espressouitestexamples.ui.movie.MovieDetailFragment
-import com.codingwithmitch.espressouitestexamples.ui.movie.StarActorsFragment
+import com.fintecimal.testingespresso.ui.movie.MovieDetailFragment
+import com.fintecimal.testingespresso.ui.movie.StarActorsFragment
 
 class MovieFragmentFactory : FragmentFactory(){
 

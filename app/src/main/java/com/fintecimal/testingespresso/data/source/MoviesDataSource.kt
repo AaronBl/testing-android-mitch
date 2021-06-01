@@ -1,6 +1,7 @@
-package com.codingwithmitch.espressouitestexamples.data.source
+package com.fintecimal.testingespresso.data.source
 
-import com.codingwithmitch.espressouitestexamples.data.Movie
+import com.fintecimal.testingespresso.data.Movie
+
 
 interface MoviesDataSource {
 

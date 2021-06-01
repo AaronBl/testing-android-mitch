@@ -1,4 +1,4 @@
-package com.codingwithmitch.espressouitestexamples.data
+package com.fintecimal.testingespresso.data
 
 data class Movie (
     val id: Int,

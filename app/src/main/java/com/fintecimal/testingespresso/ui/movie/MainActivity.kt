@@ -1,8 +1,8 @@
-package com.codingwithmitch.espressouitestexamples.ui.movie
+package com.fintecimal.testingespresso.ui.movie
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.codingwithmitch.espressouitestexamples.factory.MovieFragmentFactory
+import com.fintecimal.testingespresso.factory.MovieFragmentFactory
 import com.fintecimal.testingespresso.R
 
 class MainActivity : AppCompatActivity() {

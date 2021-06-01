@@ -1,16 +1,16 @@
-package com.codingwithmitch.espressouitestexamples.ui.movie
+package com.fintecimal.testingespresso.ui.movie
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
-import com.codingwithmitch.espressouitestexamples.data.Movie
-import com.codingwithmitch.espressouitestexamples.data.source.MoviesRemoteDataSource
 import com.fintecimal.testingespresso.R
-import com.fintecimal.testingespresso.ui.movie.DirectorsFragment
+import com.fintecimal.testingespresso.data.Movie
+import com.fintecimal.testingespresso.data.source.MoviesRemoteDataSource
 
 class MovieDetailFragment : Fragment(){
 
@@ -61,13 +61,14 @@ class MovieDetailFragment : Fragment(){
     }
 
     private fun setMovieDetails(view: View){
+        val image = view.findViewById<ImageView>(R.id.movie_image)
+        val movieTitle = view.findViewById<TextView>(R.id.movie_title)
+        val movieDescription = view.findViewById<TextView>(R.id.movie_description)
         movie.let{ nonNullMovie ->
             Glide.with(this)
                 .load(nonNullMovie.image)
-                .into(view.findViewById(R.id.movie_image))
-            val movieTitle = view.findViewById<TextView>(R.id.movie_title)
+                .into(image)
             movieTitle.text = nonNullMovie.title
-            val movieDescription = view.findViewById<TextView>(R.id.movie_description)
             movieDescription.text = nonNullMovie.description
         }
     }

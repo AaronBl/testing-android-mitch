@@ -1,16 +1,16 @@
-package com.codingwithmitch.espressouitestexamples.data.source
+package com.fintecimal.testingespresso.data.source
 
-import com.codingwithmitch.espressouitestexamples.data.DummyMovies.INFINITY_WAR
-import com.codingwithmitch.espressouitestexamples.data.DummyMovies.THE_RUNDOWN
-import com.codingwithmitch.espressouitestexamples.data.Movie
+import com.fintecimal.testingespresso.data.DummyMovies
+import com.fintecimal.testingespresso.data.Movie
+
 
 object MoviesRemoteDataSource: MoviesDataSource {
 
     private var MOVIES_REMOTE_DATA = LinkedHashMap<Int, Movie>(2)
 
     init {
-        addMovie(INFINITY_WAR)
-        addMovie(THE_RUNDOWN)
+        addMovie(DummyMovies.INFINITY_WAR)
+        addMovie(DummyMovies.THE_RUNDOWN)
     }
 
     override fun getMovie(movieId: Int): Movie? {
