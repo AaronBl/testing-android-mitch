@@ -1,18 +1,14 @@
-package com.fintecimal.testingespresso.ui.movie
+package com.fintecimal.testingespresso.ui
 
 import android.app.Activity
-import android.app.Activity.RESULT_OK
 import android.app.Instrumentation
-import android.app.Instrumentation.ActivityResult
 import android.content.ContentResolver
 import android.content.Intent
 import android.content.res.Resources
 import android.net.Uri
 import android.provider.MediaStore
 import androidx.test.espresso.Espresso
-import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions
-import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.intent.Intents.intended
 import androidx.test.espresso.intent.Intents.intending
 import androidx.test.espresso.intent.matcher.IntentMatchers.*
@@ -21,6 +17,7 @@ import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import androidx.test.platform.app.InstrumentationRegistry
 import com.fintecimal.testingespresso.R
+import com.fintecimal.testingespresso.ui.movie.GaleryActivity
 import org.hamcrest.Matcher
 import org.hamcrest.Matchers
 import org.junit.Rule
